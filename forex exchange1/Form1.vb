@@ -25,7 +25,8 @@
         End If
 
         If CRT1.SelectedIndex = 5 Then
-            PictureBox1.Image = My.Resources.EU
+            PictureBox1.Image = My.Resources.arab
+
         End If
 
         If CRT1.SelectedIndex = 6 Then
@@ -37,10 +38,6 @@
         End If
 
         If CRT1.SelectedIndex = 8 Then
-            PictureBox1.Image = My.Resources.EU
-        End If
-
-        If CRT1.SelectedIndex = 9 Then
             PictureBox1.Image = My.Resources.ph
         End If
     End Sub
@@ -67,7 +64,8 @@
         End If
 
         If CRT2.SelectedIndex = 5 Then
-            PictureBox2.Image = My.Resources.EU
+            PictureBox2.Image = My.Resources.arab
+
         End If
 
         If CRT2.SelectedIndex = 6 Then
@@ -109,7 +107,13 @@
             'USA to EU
         ElseIf cb1index = 0 And cb2index = 4 Then
             TextBox2.Text = amount * 0.9
+            ''USA to ARAB
+        ElseIf cb1index = 0 And cb2index = 5 Then
+            TextBox2.Text = amount * 962.25
+
+
         End If
+        'yung arab nalang yan self dalawa yung 4 
 
 
 
